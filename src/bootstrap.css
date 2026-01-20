@@ -1,0 +1,32 @@
+.card-bootstrap {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card-bootstrap:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-bootstrap .btn {
+    transition: transform .15s, box-shadow .15s, background .15s, border-color .15s;
+}
+
+.card-bootstrap .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--btn-shadow-hover);
+}
+
+.card-bootstrap .btn:active {
+    transform: translateY(0);
+    filter: brightness(.97);
+}
+
+.card-bootstrap .btn.btn-like:hover {
+    background-color: var(--like-bg) !important;
+    border-color: var(--like-border) !important;
+}
+
+.card-bootstrap .btn.btn-pet:hover {
+    background-color: var(--pet-bg) !important;
+    border-color: var(--pet-border) !important;
+}

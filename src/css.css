@@ -1,0 +1,106 @@
+:root {
+    --bg: #f7fafc;
+    --surface: #ffffff;
+    --ink: #1f2328;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+
+    --img-bg: #f2f6fb;
+    --like-bg: #fff1f2;
+    --like-border: #fecaca;
+    --pet-bg: #fffbeb;
+    --pet-border: #fde68a;
+    --radius-card: 16px;
+    --radius-inner: 12px;
+    --shadow: 0 10px 40px rgba(0, 0, 0, .06);
+    --shadow-hover: 0 16px 48px rgba(0, 0, 0, .10);
+    --ring: 0 0 0 3px rgba(59, 130, 246, .25);
+    --btn-shadow: 0 1px 0 rgba(0, 0, 0, .05);
+    --btn-shadow-hover: 0 6px 18px rgba(0, 0, 0, .1);
+}
+
+.card-css {
+    padding: var(--card-pad);
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card-css:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-css img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border-radius: var(--radius-inner);
+    background: var(--img-bg);
+    display: block;
+}
+
+.card-body-css h2 {
+    margin: 6px 0 2px;
+    font-weight: 900;
+    font-size: var(--fs-title);
+    line-height: 1.2;
+}
+
+.card-body-css .age {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: var(--fs-muted);
+    line-height: var(--lh-text);
+}
+
+.card-body-css p {
+    margin: 0 0 8px;
+    font-size: var(--fs-text);
+    line-height: var(--lh-text);
+}
+
+.card-css .actions {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.card-css .actions button {
+    flex: 1;
+    height: 40px;
+    padding: 0 14px;
+    border-radius: var(--radius-card);
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: inherit;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow);
+    transition: transform .15s, box-shadow .15s, background .15s;
+}
+
+.card-css .actions button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--btn-shadow-hover);
+}
+
+.card-css .actions button:active {
+    filter: brightness(.97);
+}
+
+.card-css .actions .like:hover {
+    background: var(--like-bg);
+    border-color: var(--like-border);
+}
+
+.card-css .actions .pet:hover {
+    background: var(--pet-bg);
+    border-color: var(--pet-border);
+}
+
+.card-css footer {
+    color: var(--muted);
+}
