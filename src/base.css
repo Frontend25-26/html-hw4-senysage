@@ -13,7 +13,9 @@
     --lh-text: 1.4;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
