@@ -1,0 +1,80 @@
+.card-scss {
+  padding: var(--card-pad);
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-scss:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+.card-scss img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  border-radius: var(--radius-inner);
+  background: var(--img-bg);
+  display: block;
+}
+.card-scss .card-body-scss h2 {
+  margin: 6px 0 2px;
+  font-weight: 900;
+  font-size: var(--fs-title);
+  line-height: 1.2;
+}
+.card-scss .card-body-scss .age {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: var(--fs-muted);
+  line-height: var(--lh-text);
+}
+.card-scss .card-body-scss p {
+  margin: 0 0 8px;
+  font-size: var(--fs-text);
+  line-height: var(--lh-text);
+}
+.card-scss .card-body-scss {
+  display: flex;
+  flex-direction: column;
+}
+.card-scss .actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+.card-scss .actions button {
+  flex: 1;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: var(--radius-inner);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+  box-shadow: var(--btn-shadow);
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s, border-color 0.15s, filter 0.15s;
+}
+.card-scss .actions button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--btn-shadow-hover);
+}
+.card-scss .actions button:active {
+  filter: brightness(0.97);
+}
+.card-scss .actions .like:hover {
+  background: var(--like-bg);
+  border-color: var(--like-border);
+}
+.card-scss .actions .pet:hover {
+  background: var(--pet-bg);
+  border-color: var(--pet-border);
+}
+.card-scss footer {
+  color: var(--muted);
+}
+
+/*# sourceMappingURL=scss.css.map */
